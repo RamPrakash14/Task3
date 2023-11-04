@@ -1,0 +1,317 @@
+Question 4:
+Task 1:
+1.Declare four variables without assigning values and print them in console
+ var a,b,c,d;
+ console.log(a,b,c,d);
+ output: undefined undefined undefined undefined
+
+2.How to get value of the variable myvar as output
+var myvar =1;
+console.log(myvar);
+output: 1
+
+3.Declare variables to store your first name, last name, marital status, country and age in multiple lines
+var firstname = "Ram"
+var lastname = "Prakash"
+var martialstatus = "single"
+var country = "India"
+var age = 21;
+
+4. Declare variables to store your first name, last name, marital status, country and age in a single line
+var personDetails = {firstname:"ram",lastname:"prakash",maritalstatus:"single",country:"India",age:21};
+
+5.Declare variables and assign string, boolean, undefined and null data types
+var a = "Ram";
+var b = true
+var c;
+var d = null
+console.log(a,b,c,d,)
+output: Ram true undefined null
+
+6.Convert the string to integer
+parseInt()
+Number()
+Plus sign(+)
+
+var a = "52";
+console.log(parseInt(a));
+console.log(Number(a));
+console.log(+a);
+output: 52
+        52
+        52
+
+7. Write 6 statement which provide truthy & falsey values.   
+var a = "1";
+console.log("1"==a);
+console.log("1"===a);
+console.log(1===a);
+console.log(1==a)
+console.log(1!=a);
+console.log(1!==a);
+output:
+       true
+       true
+       false
+       true
+       false
+       true
+
+Task 2:Simple programs todo for operators
+1.Square of a number
+var a =2;
+console.log(Math.pow(a,2));
+output: 4
+2.Swapping 2 numbers
+var a = 2
+var b = 3;
+var c = a;
+a=b;
+b=c;
+console.log(a,b);
+output: 3 2
+3.Addition of 3 numbers
+var a = 3;
+var b = 2;
+var c = 4;
+console.log(a+b+c);
+output: 9
+4.Celsius to Fahrenheit conversion
+var celsius = 9;
+var Fahrenheit = (celsius*(9/5))+32;
+console.log(Fahrenheit);
+output: 48.2
+5.Meter to miles
+var meter = 26;
+var miles = meter*0.016155651;
+console.log(miles);
+output: 0.420046926
+6.Pounds to kg
+var pounds = 15;
+var kg = pounds*6.803885;
+console.log(kg);
+output:102.05827500000001
+7.Calculate Batting Average
+var totalhits = 20;
+var totalbat = 4;
+console.log(totalhits/totalbat);
+8.Calculate five test scores and print their average
+ var test1 = 70;
+var test2 = 65;
+var test3 =40;
+var test4 = 26;
+var test5 = 40;
+console.log((test1+test2+test3+test4+test5)/5);
+output:48.2
+9.Power of any number x ^ y.
+function power(x,y){
+    console.log(Math.pow(x,y));
+}
+power(4,5);
+output:1024
+10.Calculate Simple Interest
+var p =10000;
+var r = 10;;
+var t = 8;
+console.log((p*r*t)/100);
+output: 8000
+11.Calculate area of an equilateral triangle
+var side = 26;
+var area =(Math.sqrt(3)/4)*(side*side);
+console.log(area.toFixed(2));
+output:997.66
+12.Area Of Isosceles Triangle
+var base = 26;
+var height = 35;
+var area = (base*height)/2;
+console.log(area);
+output: 455
+13.volume of sphere
+var rad = 52;
+var vol = (4/3)*Math.PI*Math.pow(rad,3);
+console.log(vol.toFixed(2));
+output:588977.41
+14.Volume Of Prism
+var base = 11;
+var height =9;
+var volume = (base*height)
+console.log(volume);
+output:99
+15.Find area of a triangle
+var base = 12;
+var height =10;
+var area = (1/2)*base*height;
+console.log(area);
+output:60
+16.Give the Actual cost and Sold cost, Calculate Discount Of Product
+var Actual= 2500;
+var Sold = 2000;
+var Discount = Actual-Sold;
+console.log(Discount);
+output:500
+17.Given their radius of a circle and find its diameter, circumference and area.
+var r =20;
+var dia = 2*r;
+var cir = 2*Math.PI*r;
+var area = Math.PI*r*r;
+console.log(dia,cir.toFixed(2),area.toFixed(2));
+output: 40 125.66 1256.64
+18.Given two numbers and perform all arithmetic operations.
+var a=10;
+var b=20;
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
+//output:
+30
+-10
+200
+0.5
+19.Display the asterisk pattern as shown below(No loop needed):
+*****
+*****
+*****
+*****
+*****
+console.log("*****");
+console.log("*****");
+console.log("*****");
+console.log("*****");
+console.log("*****");
+output:
+*****
+*****
+*****
+*****
+*****
+20.Calculate electricity bill?
+var watts = 100*24*31;
+var unit = watts/1000;
+var rate = unit*10;
+console.log(rate);
+output:744
+21.Program To Calculate CGPA
+var S1 =8.90;
+var S2 = 9.90;
+var S3 = 7.89;
+var S4 = 6.64;
+var S5 = 7.75;
+var S6 = 9.65;
+var CGPA=((S1+S2+S3+S4+S5+S6)/6);
+console.log(CGPA.toFixed(2));
+output:8.46
+Task 3: Simple Programs todo for Condition , Looping and Arrays
+1.Write a loop that makes seven calls to console.log to output the following triangle:
+var a=7;
+for(var i=1;i<=7;i++){
+    var result =[];
+    for(var j=1;j<=i;j++){
+        result.push("#");
+    }
+    console.log(result.join(""));
+}
+output:
+#
+##
+###
+####
+#####
+######
+#######
+2. Iterate through the string array and print it contents
+var strArray =["Jazz","Blues","New Age","Classical","Opera"];
+for(var i=0;i<strArray.length;i++){
+    console.log(strArray[i]);
+}
+output:
+Jazz
+Blues
+New Age
+Classical
+Opera 
+
+Arrays:
+1.write a code to count the elements in the array . Don’t use length property
+var myarray=[11,22,33,44,55]
+var result = [];
+var arr = 0;
+for(var i=0;myarray[i]!=null;i++){
+    arr++;
+
+}
+console.log(arr);
+2.Create an array called foods holds the names of your top 20 favorite foods, starting with the best food.
+let Foods = ["idly","dosa","puri","biriyani","pulav","burger","pizza","parotta","fries","chapathi",
+"pongal","puttu","omlette","egg","maggie","rice","noodles","brownie","cake"];
+
+3.Foods variable holds the names of your top 20 favorite foods, starting with the best food. How can you find your fifth favorite food?
+let Foods = ["idly","dosa","puri","biriyani","pulav","burger","pizza","parotta","fries","chapathi",
+"pongal","puttu","omlette","egg","maggie","rice","noodles","brownie","cake","momos"];
+console.log (Foods[4]);
+console.log(Foods.length);
+output: pulav
+4.Starting from the existing friends variable below, change the element that is currently “Mari” to “Munnabai”.
+let friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+function dataHandling(input){
+    for(var i=0;i<input.length;i++){
+        if(input[i]="Mari"){
+            friends[i] = "Munnabai";
+        }
+    }
+    }
+    dataHandling(friends);
+    console.log(friends);
+5.Starting from the friends variable below, Loop and Print the names till you meet CaptianAmerica.
+const friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+for(var i=0; friends[i]!="CaptianAmerica";i++){
+    console.log(friends[i]);
+}
+6.Starting from the friends variable below, Loop and Print the names till you meet CaptianAmerica.
+const friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+function dataHandling(input){
+    var result =[];
+    for(var i=0;i<input.length;i++){
+        if(input[i]!="CaptianAmerica"){
+            result.push(input[i]);
+         }
+         else{
+            break;
+         }
+                // return result;
+            }
+            console.log(result);
+            
+    }
+dataHandling(friends);
+7.Find the person is ur friend or not.
+const friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+var length =0;
+
+function dataHandling(input,name){
+    for(var i=0;i<input.length;i++){
+        if(input[i]===name){
+            length++;
+        }
+    }
+    if(length===1) return "friend";
+    else return "Not friend"
+}
+let found = dataHandling(friends,"Jeff");
+
+Objects:
+
+1.What the output
+myobject = {1:one,"11":1,"name":"arun"}
+console.log(myobject.11); 
+console.log(myobject.name);
+output:syntax error
+2.Add a new key value pair to myobject
+key : ten
+value : ten
+myobject = {1:"one","11":1,"names":"arun"}
+myobject.ten = "ten";
+console.log(myobject);
+3.Write out an object literal to represent the data below.
+myobject = {names:"Guvi",last:"Geek",no:"6",add:"IIT-M RP",location:"Chennai"}
+console.log(myobject);
